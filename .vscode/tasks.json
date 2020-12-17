@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dotnet:tool:install",
+            "type": "shell",
+            "command": "dotnet tool install -g Amazon.Lambda.Tools"
+        },
+        {
+            "label": "dotnet:tool:update",
+            "type": "shell",
+            "command": "dotnet tool update -g Amazon.Lambda.Tools"
+        },
+        {
+            "label": "dotnet:test",
+            "type": "shell",
+            "command": "dotnet test test/MyFunction.Tests/MyFunction.Tests.csproj"
+        },
+    ]
+}
